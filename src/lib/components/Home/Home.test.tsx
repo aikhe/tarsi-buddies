@@ -2,10 +2,12 @@ import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 import { Home } from './Home.tsx';
 
-// verifies the homepage placeholder renders.
+// verifies the homepage title image renders.
 describe('Home', () => {
-  it('renders the placeholder title', () => {
+  it('renders the title logo', () => {
     render(<Home />);
-    expect(screen.getByText('Tarsi Buddies!')).toBeInTheDocument();
+    const logo = screen.getByRole('img', { name: 'Tarsi Buddies' });
+    expect(logo).toBeInTheDocument();
+    expect(logo).toHaveAttribute('src', '/title.svg');
   });
 });
