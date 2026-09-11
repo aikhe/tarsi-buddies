@@ -1,8 +1,8 @@
 @import 'tailwindcss';
-@import './layout/_containers.scss';
-@import './base/_colors.scss';
-@import './base/_typography.scss';
-@import './utilities/_buttons.scss';
+@import './layout/_containers.css';
+@import './base/_colors.css';
+@import './base/_typography.css';
+@import './utilities/_buttons.css';
 
 :root {
   color: var(--color-text);

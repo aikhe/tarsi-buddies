@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import './PageLayout.scss';
+import './PageLayout.css';
 
 type PageLayoutProps = {
   children: ReactNode;

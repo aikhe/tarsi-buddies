@@ -1,6 +1,6 @@
 import { Home } from './lib/components/Home/Home.tsx';
 import { PageLayout } from './lib/layouts/PageLayout.tsx';
-import './App.scss';
+import './App.css';
 
 function App() {
   return (
