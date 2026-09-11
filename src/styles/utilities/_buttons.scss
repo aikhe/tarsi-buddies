@@ -1,0 +1,42 @@
+.ui-button {
+  align-items: center;
+  background: var(--color-overlay-02);
+  border: 1px solid var(--color-border-solid);
+  color: var(--color-text);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 400;
+  justify-content: center;
+  letter-spacing: 0.34%;
+  line-height: normal;
+  padding: 8px 12px;
+  position: relative;
+  text-decoration: none;
+  z-index: 99;
+}
+
+.ui-button:hover {
+  background: var(--color-overlay-05);
+}
+
+.ui-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.ui-button--ghost {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  justify-content: flex-start;
+  padding: 0;
+  text-align: left;
+}
+
+.ui-button--ghost:hover {
+  background: none;
+  color: var(--color-text);
+}

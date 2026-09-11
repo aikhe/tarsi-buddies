@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+@import './layout/_containers.scss';
+@import './base/_colors.scss';
+@import './base/_typography.scss';
+@import './utilities/_buttons.scss';
+
+:root {
+  color: var(--color-text);
+  font-family: Geist, sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.34%;
+}
+
+body {
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  height: 100vh;
+  margin: 0;
+  -moz-osx-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+:focus-visible {
+  outline: 1px solid var(--color-overlay-40);
+  outline-offset: 2px;
+}

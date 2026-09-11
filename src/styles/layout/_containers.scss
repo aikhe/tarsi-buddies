@@ -1,0 +1,10 @@
+:root {
+  --container-max-width: 1920px;
+  --container-width: 96.4%;
+}
+
+.section-container {
+  margin-inline: auto;
+  max-width: var(--container-max-width);
+  width: var(--container-width);
+}
