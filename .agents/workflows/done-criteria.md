@@ -9,8 +9,8 @@ description: Quality checklist to verify BEM compliance, design tokens, and code
 ## Steps
 
 1. **Rule Validation**:
-   - Check that all custom CSS/SCSS follows the **BEM** convention.
-   - Verify colors and type come from design tokens (`_colors.scss`, `_typography.scss`), not hardcoded values.
+   - Check that all custom CSS follows the **BEM** convention.
+   - Verify colors and type come from design tokens (`_colors.css`, `_typography.css`), not hardcoded values.
    - Ensure new UI respects both light and dark `data-theme` overrides where applicable.
    - Ensure shared state lives in `src/lib/state/` context, not ad-hoc globals.
 2. **Technical Polish**:

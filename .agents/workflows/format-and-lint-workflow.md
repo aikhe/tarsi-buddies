@@ -17,7 +17,7 @@ description: Automated process to run linting and resolve technical diagnostics 
    - Fix any `react-hooks` rule violations.
    - Fix type errors reported by `tsc -b` (runs as part of `bun run build`).
 4. **Style Guarantee**:
-   - Verify that `order/properties-alphabetical-order` is respected in all modified SCSS/CSS files.
+   - Verify that `order/properties-alphabetical-order` is respected in all modified CSS files.
    - Ensure `selector-class-pattern` adheres to the BEM standard.
 5. **Final Check**: Run `bun run check` to confirm zero diagnostics before finishing.
 6. **CI Verification**: Ensure all changes pass the remote CI pipeline (CI runs `bun run check`, then `bun run test`, then `bun run build`).
