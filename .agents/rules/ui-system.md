@@ -8,7 +8,7 @@ Defines the project's UI/UX standards, typography, and tokens. Apply this rule w
 
 ## Intent
 
-Maintain a clean, consistent, and fast user interface built on design tokens and BEM SCSS.
+Maintain a clean, consistent, and fast user interface built on design tokens and BEM CSS.
 
 ## Rules
 
@@ -23,16 +23,16 @@ Maintain a clean, consistent, and fast user interface built on design tokens and
   - Main: system/Geist-style stack at light weights with tight letter spacing (0.34%).
   - Use `font--mono-label` class for monospace labels.
   - Use `font--hero-title` class for hero headings.
-- **Colors**: Use the curated palette in `_colors.scss`.
+- **Colors**: Use the curated palette in `_colors.css`.
   - Surface: `var(--color-bg)`, `var(--color-primary)`
   - Content: `var(--color-text)`, `var(--color-text-muted)`, `var(--color-text-inv)`
   - Overlays: `var(--color-overlay-xx)` (from 02 to 60) for depth.
-- **Styling approach**: Tailwind v4 is configured as a CSS foundation (`@import 'tailwindcss'` in `main.scss`) but the project styles UI with hand-written BEM SCSS using design tokens from `_colors.scss`, `_typography.scss`, and `_containers.scss`. Component SCSS lives next to the component (e.g. `Home/Home.scss`).
+- **Styling approach**: Tailwind v4 is configured as a CSS foundation (`@import 'tailwindcss'` in `main.css`) but the project styles UI with hand-written BEM CSS using design tokens from `_colors.css`, `_typography.css`, and `_containers.css`. Component CSS lives next to the component (e.g. `Home/Home.css`).
 - **Layout**:
   - Max Width: `1920px` (`--container-max-width`)
   - Standard Width: `96.4%` (`--container-width`)
   - Main container class: `.section-container`
-- **Buttons**: Use `.ui-button` primitives from `utilities/_buttons.scss` (`--ghost` modifier for quiet actions).
+- **Buttons**: Use `.ui-button` primitives from `utilities/_buttons.css` (`--ghost` modifier for quiet actions).
 - **Theme**: Light by default; dark overrides live under `:root[data-theme='dark']`. New UI MUST respect both.
 
 ## Anti-patterns
