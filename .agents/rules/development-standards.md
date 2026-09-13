@@ -31,7 +31,7 @@ Maintain a clean, fast, and consistent coding standard that prioritizes readabil
 ## Rules
 
 - MUST use React 19 function components with TypeScript (no class components).
-- MUST use BEM naming convention for all custom CSS/SCSS; Tailwind utilities are configured but the project styles with hand-written BEM classes.
+- MUST use BEM naming convention for all custom CSS; Tailwind utilities are configured but the project styles with hand-written BEM classes.
 - MUST remove unnecessary code on sight.
 - MUST add `key` props to all list renders.
 - MUST resolve all typecheck diagnostics (`bun run build` runs `tsc -b`).
@@ -54,10 +54,10 @@ Maintain a clean, fast, and consistent coding standard that prioritizes readabil
 
 ## Guidelines
 
-- Font: system/Geist-style stack at light weights with tight letter-spacing (see `_typography.scss`).
+- Font: system/Geist-style stack at light weights with tight letter-spacing (see `_typography.css`).
 - Animation: CSS transitions for simple state changes; reach for a motion library only when justified.
-- Colors: Use variables from `_colors.scss` only.
-- Styling: BEM SCSS files next to components + shared tokens in `src/styles/`; Tailwind v4 is imported as a CSS foundation layer (`@import 'tailwindcss'` in `main.scss`) but utility classes are used sparingly.
+- Colors: Use variables from `_colors.css` only.
+- Styling: BEM CSS files next to components + shared tokens in `src/styles/`; Tailwind v4 is imported as a CSS foundation layer (`@import 'tailwindcss'` in `main.css`) but utility classes are used sparingly.
 - State: React context + hooks (`src/lib/state/`); no global singletons without boundaries.
 - Deploy: Vercel static build (`bun run build` → `dist`, SPA fallback in `vercel.json`).
 
@@ -67,4 +67,4 @@ Maintain a clean, fast, and consistent coding standard that prioritizes readabil
 - Shared global state without clear boundaries.
 - Hardcoding hex colors or pixel values that should be variables.
 - Class components or untyped props.
-- Relying on Tailwind utility classes instead of BEM + design token SCSS variables.
+- Relying on Tailwind utility classes instead of BEM + design token CSS variables.
