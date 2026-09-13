@@ -19,15 +19,15 @@ This skill ensures that all UI implementations adhere to the project's design-to
 
 Always refer to the existing design system in `src/styles`:
 
-- **Colors (`base/_colors.scss`)**: Use `var(--color-bg)`, `var(--color-text)`, and `var(--color-primary)`. Use `--color-overlay-xx` for depth.
-- **Typography (`base/_typography.scss`)**: Light weights with 0.34% tracking for main text. Use `font--mono-label` for monospace labels.
-- **Layout (`layout/_containers.scss`)**: Wrap page and section content in `.section-container` (max-width 1920px).
-- **Buttons (`utilities/_buttons.scss`)**: Use `.ui-button` primitives (`--ghost` modifier for quiet actions).
+- **Colors (`base/_colors.css`)**: Use `var(--color-bg)`, `var(--color-text)`, and `var(--color-primary)`. Use `--color-overlay-xx` for depth.
+- **Typography (`base/_typography.css`)**: Light weights with 0.34% tracking for main text. Use `font--mono-label` for monospace labels.
+- **Layout (`layout/_containers.css`)**: Wrap page and section content in `.section-container` (max-width 1920px).
+- **Buttons (`utilities/_buttons.css`)**: Use `.ui-button` primitives (`--ghost` modifier for quiet actions).
 
 ### 2. BEM Mapping
 
 - Always structure classes as `block`, `block__element`, and `block--modifier`.
-- Keep component SCSS next to the component (e.g. `Home/Home.scss`).
+- Keep component CSS next to the component (e.g. `Home/Home.css`).
 - Avoid deeply nested selectors; rely on specific BEM classes for scoping.
 
 ### 3. Animation Guidelines
@@ -49,7 +49,7 @@ export function Home() {
 }
 ```
 
-```scss
+```css
 .home__title {
   color: var(--color-text);
   font-weight: 200;
@@ -61,4 +61,4 @@ export function Home() {
 
 - Hardcoding hex codes (e.g., `#ffffff`) instead of using CSS variables.
 - Using plain browser defaults or generic colors.
-- Utility-class soup instead of BEM + design token SCSS variables.
+- Utility-class soup instead of BEM + design token CSS variables.
