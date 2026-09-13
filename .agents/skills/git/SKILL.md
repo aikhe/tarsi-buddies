@@ -49,4 +49,4 @@ This skill ensures that the commit history and PR documentation remain technical
 ## Samples
 
 - `feat(home): placeholder title & bem styles + add pagelayout component`
-- `fix(build): resolve vercel spa fallback & tighten stylelint scss rules`
+- `fix(build): resolve vercel spa fallback & tighten stylelint css rules`
