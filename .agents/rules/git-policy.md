@@ -48,7 +48,7 @@ Maintain a clean, technical, and descriptive commit/PR history following a stric
 ## Samples
 
 - `feat(home): placeholder title & bem styles + add pagelayout component`
-- `fix(build): resolve vercel spa fallback & tighten stylelint scss rules`
+- `fix(build): resolve vercel spa fallback & tighten stylelint css rules`
 
 ### PR Description Example
 
@@ -62,13 +62,13 @@ wiring the design-token entrypoint for future sections.
 
 - **Homepage placeholder**: `Home` component rendering "Tarsi Buddies!".
 - **Shared layout**: `PageLayout` wrapper using `.section-container`.
-- **Token entrypoint**: `main.scss` importing tailwind + color/type tokens.
+- **Token entrypoint**: `main.css` importing tailwind + color/type tokens.
 
 ### Changes
 
-- **Homepage**: `src/lib/components/Home/` component, scss, test
-- **Layout**: `src/lib/layouts/PageLayout` component + scss
-- **Styles**: `src/styles/main.scss` + `base/`, `layout/`, `utilities/`
+- **Homepage**: `src/lib/components/Home/` component, css, test
+- **Layout**: `src/lib/layouts/PageLayout` component + css
+- **Styles**: `src/styles/main.css` + `base/`, `layout/`, `utilities/`
 - **Deploy**: `vercel.json` SPA fallback to `/index.html`
 
 ### Verification
