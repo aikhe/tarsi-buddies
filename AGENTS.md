@@ -20,7 +20,7 @@ This repository already has a local agent system under `.agents/`. Use this file
 
 ## Skill Map
 
-- `design`: React UI, BEM SCSS, tokens, Tailwind foundation.
+- `design`: React UI, BEM CSS, tokens, Tailwind foundation.
 - `tests`: unit tests, component tests with Testing Library.
 - `git`: commit and PR formatting.
 - `pr`: pull request creation with structured descriptions and verification.
@@ -46,7 +46,7 @@ This repository already has a local agent system under `.agents/`. Use this file
 
 ## Tooling Notes
 
-- The repo uses Bun, Vite, React 19, TypeScript, Tailwind v4, and SCSS (sass).
+- The repo uses Bun, Vite, React 19, TypeScript, Tailwind v4, and plain CSS.
 - CI runs `bun run check`, `bun run test`, and `bun run build`.
 - Commit messages are validated by Commitlint in CI.
 - Deploys to Vercel as a static Vite build (`dist`, SPA fallback via `vercel.json`).
