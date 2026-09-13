@@ -40,7 +40,7 @@ This repository already has a local agent system under `.agents/`. Use this file
 - Keep changes within the single-app structure under `src/` (`lib/`, `styles/`).
 - Use `bun run check` for validation and `bun run build` for final verification when code changes.
 - Do not commit unless the user explicitly asks.
-- Do not stage or commit the `.agents` directory itself.
+- Include `.agents/` changes in commits when agent files are part of the work.
 - Prefer root-cause fixes over superficial patches.
 - Keep UI work aligned with the design-token system and BEM naming conventions.
 
