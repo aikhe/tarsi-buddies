@@ -11,7 +11,7 @@ trigger: always_on
 ## The System
 
 - **App**: A Vite + React 19 + TypeScript SPA in `src/`. Deploys to Vercel as a static build.
-- **Styling**: Tailwind v4 as foundation layer + hand-written BEM SCSS using design tokens in `src/styles/`.
+- **Styling**: Tailwind v4 as foundation layer + hand-written BEM CSS using design tokens in `src/styles/`.
 - **State**: React context in `src/lib/state/` for shared app state.
 - **Content**: Local data models in `src/lib/data/` (no CMS).
 - **Infrastructure**: Plain bun scripts (no Turborepo). Vercel builds `dist` via `bun run build`.
@@ -24,7 +24,7 @@ Every technical decision should keep the project small, fast, and easy to deploy
 ## Awareness Rules
 
 - MUST be aware that this is a single-app repo (no `apps/` or `packages/`).
-- MUST keep styling on design tokens (`src/styles/base/_colors.scss`, `_typography.scss`).
+- MUST keep styling on design tokens (`src/styles/base/_colors.css`, `_typography.css`).
 - MUST maintain the BEM naming convention across all new UI.
 - MUST keep the Vercel SPA fallback (`vercel.json` rewrites) working when touching routing or build output.
 - MUST use React context in `src/lib/state/` for shared state (not ad-hoc globals).

@@ -12,7 +12,7 @@ Maintain a scalable and predictable single-app structure with feature-based isol
 
 - **Package Manager**: Bun
 - **Frontend**: React 19 + TypeScript (Vite 8)
-- **Styling**: Tailwind v4 foundation + hand-written BEM SCSS (sass)
+- **Styling**: Tailwind v4 foundation + hand-written BEM CSS
 - **State**: React context (`src/lib/state/`)
 - **Content**: Local data models (`src/lib/data/`)
 - **Testing**: Vitest + Testing Library + jsdom
@@ -33,8 +33,8 @@ Maintain a scalable and predictable single-app structure with feature-based isol
 │   │   ├── state/       # react context state
 │   │   ├── types/       # typescript type definitions
 │   │   └── utils/       # utility functions
-│   └── styles/          # design tokens (BEM/SCSS) — base/, layout/, utilities/
-│       └── main.scss    # tailwind + token entrypoint
+│   └── styles/          # design tokens (BEM/CSS) — base/, layout/, utilities/
+│       └── main.css     # tailwind + token entrypoint
 ├── public/              # static vercel assets (favicon, robots.txt)
 ├── .agents/             # agent skills, rules, and workflows
 ├── .github/workflows/   # CI: check + test + build, commitlint
