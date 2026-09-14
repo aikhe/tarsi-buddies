@@ -10,4 +10,35 @@ describe('Home', () => {
     expect(logo).toBeInTheDocument();
     expect(logo).toHaveAttribute('src', '/title.svg');
   });
+
+  it('renders the tagline below the title', () => {
+    render(<Home />);
+    expect(
+      screen.getByText(/make every peso work smarter for you/i)
+    ).toBeInTheDocument();
+  });
+
+  it('renders the ufo visual on the right', () => {
+    render(<Home />);
+    const ufo = screen.getByRole('img', { name: 'Tarsi riding a UFO' });
+    expect(ufo).toBeInTheDocument();
+    expect(ufo).toHaveAttribute('src', '/tarsi-ufo.svg');
+  });
+
+  it('renders the number one graphic under the tagline', () => {
+    render(<Home />);
+    const badge = screen.getByRole('img', { name: 'Number one' });
+    expect(badge).toBeInTheDocument();
+    expect(badge).toHaveAttribute('src', '/number-one.svg');
+  });
+
+  it('renders the app store and browser actions', () => {
+    render(<Home />);
+    expect(
+      screen.getByRole('button', { name: /download on the app store/i })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: /open in the browser/i })
+    ).toBeInTheDocument();
+  });
 });
