@@ -1,0 +1,49 @@
+.preview {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  overflow-x: clip;
+  padding-block: 2rem 0;
+}
+
+.preview__phone {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.preview__phone--left {
+  margin-right: -6rem;
+  max-width: 22rem;
+  transform: rotate(-8deg) translateY(2rem);
+  transform-origin: bottom right;
+}
+
+.preview__phone--center {
+  max-width: 22rem;
+  z-index: 1;
+}
+
+.preview__phone--right {
+  margin-left: -6rem;
+  max-width: 22rem;
+  transform: rotate(8deg) translateY(2rem);
+  transform-origin: bottom left;
+}
+
+.preview__phone-image {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .preview__phone--left {
+    margin-right: -3.5rem;
+    transform: rotate(-5deg) translateY(1.25rem);
+  }
+
+  .preview__phone--right {
+    margin-left: -3.5rem;
+    transform: rotate(5deg) translateY(1.25rem);
+  }
+}
