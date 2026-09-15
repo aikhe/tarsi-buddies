@@ -1,0 +1,39 @@
+.fall {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-block: 8rem 2rem;
+  text-align: center;
+}
+
+.fall__character {
+  display: block;
+  height: auto;
+  width: 14rem;
+}
+
+.fall__actions {
+  margin-top: 1.5rem;
+}
+
+.fall__shadow {
+  display: block;
+  height: auto;
+  margin-top: 5rem;
+  width: 14rem;
+}
+
+@media (max-width: 640px) {
+  .fall {
+    padding-block: 6rem 1.5rem;
+  }
+
+  .fall__character {
+    width: 10rem;
+  }
+
+  .fall__shadow {
+    margin-top: 3rem;
+    width: 10rem;
+  }
+}
