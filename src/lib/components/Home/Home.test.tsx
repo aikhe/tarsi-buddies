@@ -20,9 +20,16 @@ describe('Home', () => {
 
   it('renders the ufo visual on the right', () => {
     render(<Home />);
-    const ufo = screen.getByRole('img', { name: 'Tarsi riding a UFO' });
+    const ufo = screen.getByRole('img', { name: 'UFO' });
     expect(ufo).toBeInTheDocument();
-    expect(ufo).toHaveAttribute('src', '/tarsi-ufo.svg');
+    expect(ufo).toHaveAttribute('src', '/ufo.svg');
+  });
+
+  it('renders the floating tarsi on top of the ufo', () => {
+    render(<Home />);
+    const tarsi = screen.getByRole('img', { name: 'Floating Tarsi' });
+    expect(tarsi).toBeInTheDocument();
+    expect(tarsi).toHaveAttribute('src', '/tarsi-float.svg');
   });
 
   it('renders the number one graphic under the tagline', () => {
