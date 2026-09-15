@@ -1,0 +1,145 @@
+.rawr__frame {
+  flex: 1 1 0;
+  max-width: 36rem;
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.rawr__sky {
+  background-color: var(--color-overlay-05);
+  border-radius: 2rem;
+  height: 36rem;
+  overflow: clip;
+  position: relative;
+}
+
+.rawr__lane {
+  left: 0;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+  overflow: hidden;
+  padding-bottom: 8em;
+  position: absolute;
+  right: 0;
+}
+
+.rawr__lane--back {
+  font-size: 1rem;
+  opacity: 0.9;
+  top: 3rem;
+}
+
+.rawr__lane--front {
+  font-size: 1rem;
+  top: 8rem;
+}
+
+.rawr__track {
+  animation: rawr-drift 120s linear infinite;
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.rawr__lane--front .rawr__track {
+  animation-duration: 80s;
+  animation-name: rawr-drift-rev;
+}
+
+.rawr__set {
+  display: flex;
+  padding-inline: 10em 12em;
+}
+
+.rawr__lane--front .rawr__set {
+  padding-inline: 6em;
+}
+
+.rawr__cloud {
+  display: block;
+  flex-shrink: 0;
+  height: auto;
+}
+
+.rawr__meteor {
+  height: auto;
+  position: absolute;
+  right: -3rem;
+  top: -4rem;
+  width: 11rem;
+  will-change: transform;
+  z-index: 2;
+}
+
+.rawr__dino {
+  bottom: -8rem;
+  height: 30rem;
+  left: 53%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: auto;
+  z-index: 3;
+}
+
+@keyframes rawr-drift {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rawr-drift-rev {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rawr__track {
+    animation: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .rawr {
+    padding-block: 8rem 1.5rem;
+  }
+
+  .rawr__sky {
+    border-radius: 1.5rem;
+    height: 26rem;
+  }
+
+  .rawr__lane--back,
+  .rawr__lane--front {
+    font-size: 0.6rem;
+  }
+
+  .rawr__lane--front {
+    top: 7rem;
+  }
+
+  .rawr__meteor {
+    right: -1rem;
+    top: -2.5rem;
+    width: 7rem;
+  }
+
+  .rawr__dino {
+    bottom: -5rem;
+    height: 15rem;
+  }
+}
