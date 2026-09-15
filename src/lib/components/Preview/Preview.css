@@ -3,29 +3,32 @@
   display: flex;
   justify-content: center;
   overflow-x: clip;
-  padding-block: 2rem 0;
+  padding-block: 0;
+  will-change: transform;
 }
 
 .preview__phone {
   flex: 1 1 0;
   min-width: 0;
+  will-change: transform;
 }
 
 .preview__phone--left {
   margin-right: -6rem;
-  max-width: 22rem;
+  max-width: 20rem;
   transform: rotate(-8deg) translateY(2rem);
   transform-origin: bottom right;
 }
 
 .preview__phone--center {
-  max-width: 22rem;
+  max-width: 20rem;
+  transform: translateY(-0.5rem);
   z-index: 1;
 }
 
 .preview__phone--right {
   margin-left: -6rem;
-  max-width: 22rem;
+  max-width: 20rem;
   transform: rotate(8deg) translateY(2rem);
   transform-origin: bottom left;
 }
