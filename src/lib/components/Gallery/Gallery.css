@@ -1,0 +1,59 @@
+.gallery {
+  /* bleed to the viewport edges from inside the 96.4% container. */
+  margin-inline: -1.87%;
+  overflow: clip;
+  padding-block: 10rem 2rem;
+}
+
+.gallery__viewport {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+  overflow: hidden;
+}
+
+.gallery__track {
+  animation: gallery-scroll 30s linear infinite;
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.gallery__set {
+  display: flex;
+  gap: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.gallery__screen {
+  border-radius: 1.5rem;
+  display: block;
+  height: 36rem;
+  width: auto;
+}
+
+@keyframes gallery-scroll {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery__screen {
+    height: 26rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery__track {
+    animation: none;
+  }
+}
