@@ -6,7 +6,7 @@
 
 :root {
   color: var(--color-text);
-  font-family: Geist, sans-serif;
+  font-family: var(--font-sans);
   font-weight: 200;
   letter-spacing: 0.34%;
 }
@@ -14,8 +14,8 @@
 body {
   background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
-  height: 100vh;
   margin: 0;
+  min-height: 100vh;
   -moz-osx-smoothing: grayscale;
   text-rendering: optimizelegibility;
 }
@@ -23,4 +23,22 @@ body {
 :focus-visible {
   outline: 1px solid var(--color-overlay-40);
   outline-offset: 2px;
+}
+
+/* required lenis smooth-scroll styles. */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
 }
