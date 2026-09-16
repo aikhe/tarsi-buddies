@@ -13,6 +13,7 @@ export function SiteHeader() {
           className="site-header__logo"
           src="/logo.svg"
         />
+        <span className="site-header__name">Buddies</span>
       </a>
       <button className="site-header__action" type="button">
         Download the app
