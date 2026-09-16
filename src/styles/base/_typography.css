@@ -1,5 +1,19 @@
+:root {
+  --font-mono:
+    'Geist Mono', ui-monospace, 'SF Mono', menlo, consolas, monospace;
+  --font-rounded:
+    'SF Pro Rounded', ui-rounded, 'SF Pro Text', system-ui, -apple-system,
+    'Segoe UI', roboto, 'Helvetica Neue', arial, sans-serif;
+  --font-sans:
+    geist, system-ui, -apple-system, 'Segoe UI', roboto, 'Helvetica Neue',
+    arial, sans-serif;
+  --font-text:
+    'SF Pro Text', 'SF Pro Display', system-ui, -apple-system, 'Segoe UI',
+    roboto, 'Helvetica Neue', arial, sans-serif;
+}
+
 .font--mono-label {
-  font-family: 'Geist Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.34%;
@@ -7,7 +21,7 @@
 }
 
 .font--hero-title {
-  font-family: Geist, sans-serif;
+  font-family: var(--font-sans);
   font-size: 1.5rem;
   letter-spacing: 0.34%;
   line-height: 24px;

@@ -5,7 +5,7 @@
   color: var(--color-text);
   cursor: pointer;
   display: inline-flex;
-  font-family: 'Geist Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 0.8rem;
   font-weight: 400;
   justify-content: center;

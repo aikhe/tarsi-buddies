@@ -3,7 +3,7 @@
   --color-white: #fff;
   --color-primary: #ededed;
   --color-bg: #ededed;
-  --color-text: #080807;
+  --color-text: #242424;
   --color-text-muted: #737373;
   --color-text-inv: var(--color-white);
   --color-overlay-02: #f0f0f0;
@@ -16,6 +16,7 @@
   --color-overlay-60: rgb(0 0 0 / 60%);
   --color-border-solid: #bfbfbf;
   --color-border-corner: #000;
+  --color-success: #178a45;
 }
 
 :root[data-theme='dark'] {
@@ -34,4 +35,5 @@
   --color-overlay-60: rgb(255 255 255 / 60%);
   --color-border-solid: #303030;
   --color-border-corner: #4e4e4e;
+  --color-success: #3ddc74;
 }
