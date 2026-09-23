@@ -22,15 +22,3 @@
     'SF Pro Text', 'SF Pro Display', system-ui, -apple-system, 'Segoe UI',
     roboto, 'Helvetica Neue', arial, sans-serif;
 }
-
-:root[data-theme='dark'] {
-  --color-primary: #080807;
-  --color-bg: var(--color-primary);
-  --color-text: var(--color-white);
-  --color-text-muted: #707070;
-  --color-text-inv: var(--color-black);
-  --color-overlay-05: rgb(255 255 255 / 5%);
-  --color-overlay-10: rgb(255 255 255 / 10%);
-  --color-overlay-40: rgb(255 255 255 / 40%);
-  --color-success: #3ddc74;
-}
