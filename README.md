@@ -1,6 +1,6 @@
 # Tarsi Buddies
 
-Vite + React + TypeScript starter styled like `ego-ipse`, ready to deploy on Vercel.
+Site for the Tarsi Buddies app. Bun + Vite + React + TypeScript + Tailwind, deployed on Vercel.
 
 ## Quickstart
 
@@ -32,14 +32,12 @@ bun run dev
 ## Structure
 
 ```text
-.
-├── src/
-│   ├── App.tsx / main.tsx
-│   ├── lib/
-│   │   ├── assets/      # fonts, images, svgs
-│   │   ├── components/  # feature-based components (Home/, ...)
-│   │   ├── layouts/     # page-level layout components
-│   │   └── utils/       # utility functions
-│   └── styles/          # globals — tokens.css, main.css
-└── .github/workflows/   # ci: check + test + build, commitlint
+src/
+├── App.tsx / main.tsx
+├── lib/
+│   ├── assets/      # images grouped by component
+│   ├── components/  # feature-based components (Home/, ...)
+│   ├── layouts/     # page-level layout components
+│   └── utils/       # utility functions
+└── styles/          # globals — tokens.css, main.css
 ```
