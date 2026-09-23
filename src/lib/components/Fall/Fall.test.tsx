@@ -6,10 +6,9 @@ import { Fall } from './Fall.tsx';
 describe('Fall', () => {
   it('renders the falling character', () => {
     render(<Fall />);
-    expect(screen.getByRole('img', { name: /falling/i })).toHaveAttribute(
-      'src',
-      '/tarsi-fall.svg'
-    );
+    expect(
+      screen.getByRole('img', { name: /falling/i }).getAttribute('src')
+    ).toMatch(/tarsi-fall\.svg$/);
   });
 
   it('renders the store actions under the character', () => {

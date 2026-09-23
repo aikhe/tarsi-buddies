@@ -1,3 +1,6 @@
+import tarsiFloat from '../../assets/home/tarsi-float.svg';
+import title from '../../assets/home/title.svg';
+import ufo from '../../assets/home/ufo.svg';
 import './ScreenBlock.css';
 
 // mobile and mid screens see the block screen instead of the homepage.
@@ -12,20 +15,20 @@ export function ScreenBlock() {
           alt="UFO"
           className="screen-block__ufo"
           decoding="async"
-          src="/ufo.svg"
+          src={ufo}
         />
         <img
           alt="Floating Tarsi"
           className="screen-block__tarsi"
           decoding="async"
-          src="/tarsi-float.svg"
+          src={tarsiFloat}
         />
       </div>
       <img
         alt="Tarsi Buddies"
         className="screen-block__title"
         decoding="async"
-        src="/title.svg"
+        src={title}
       />
       <p className="screen-block__description">
         This page is only available on <br />

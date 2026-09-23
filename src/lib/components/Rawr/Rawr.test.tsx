@@ -6,14 +6,12 @@ import { Rawr } from './Rawr.tsx';
 describe('Rawr', () => {
   it('renders the dino and meteor', () => {
     render(<Rawr />);
-    expect(screen.getByRole('img', { name: /dino/i })).toHaveAttribute(
-      'src',
-      '/rawr/dino.svg'
-    );
-    expect(screen.getByRole('img', { name: /meteor/i })).toHaveAttribute(
-      'src',
-      '/rawr/meteor.svg'
-    );
+    expect(
+      screen.getByRole('img', { name: /dino/i }).getAttribute('src')
+    ).toMatch(/rawr\/dino\.svg$/);
+    expect(
+      screen.getByRole('img', { name: /meteor/i }).getAttribute('src')
+    ).toMatch(/rawr\/meteor\.svg$/);
   });
 
   it('renders each lane of clouds once for assistive tech', () => {

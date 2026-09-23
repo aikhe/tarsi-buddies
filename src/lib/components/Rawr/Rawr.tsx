@@ -1,6 +1,12 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import cloudOne from '../../assets/rawr/clouds/1.svg';
+import cloudTwo from '../../assets/rawr/clouds/2.svg';
+import cloudThree from '../../assets/rawr/clouds/3.svg';
+import cloudFive from '../../assets/rawr/clouds/5.svg';
+import dino from '../../assets/rawr/dino.svg';
+import meteor from '../../assets/rawr/meteor.svg';
 import './Rawr.css';
 
 type Cloud = {
@@ -17,21 +23,21 @@ const backClouds: Cloud[] = [
     gap: '14em',
     label: '3',
     offset: '0em',
-    src: '/rawr/clouds/3.svg',
+    src: cloudThree,
     width: '13em',
   },
   {
     gap: '8em',
     label: '5',
     offset: '6em',
-    src: '/rawr/clouds/5.svg',
+    src: cloudFive,
     width: '10em',
   },
   {
     gap: '8em',
     label: '1',
     offset: '2em',
-    src: '/rawr/clouds/1.svg',
+    src: cloudOne,
     width: '11em',
   },
 ];
@@ -42,21 +48,21 @@ const frontClouds: Cloud[] = [
     gap: '16em',
     label: '3',
     offset: '1em',
-    src: '/rawr/clouds/3.svg',
+    src: cloudThree,
     width: '12em',
   },
   {
     gap: '12em',
     label: '2',
     offset: '0em',
-    src: '/rawr/clouds/2.svg',
+    src: cloudTwo,
     width: '17em',
   },
   {
     gap: '14em',
     label: '5',
     offset: '3em',
-    src: '/rawr/clouds/5.svg',
+    src: cloudFive,
     width: '14em',
   },
 ];
@@ -218,7 +224,7 @@ export function Rawr() {
           decoding="async"
           loading="lazy"
           ref={dinoRef}
-          src="/rawr/dino.svg"
+          src={dino}
         />
       </div>
       <img
@@ -227,7 +233,7 @@ export function Rawr() {
         decoding="async"
         loading="lazy"
         ref={meteorRef}
-        src="/rawr/meteor.svg"
+        src={meteor}
       />
     </div>
   );

@@ -7,7 +7,7 @@ describe('Buddies', () => {
   it('renders the buddies illustration', () => {
     render(<Buddies />);
     const image = screen.getByRole('img', { name: /buddies/i });
-    expect(image).toHaveAttribute('src', '/group.svg');
+    expect(image.getAttribute('src')).toMatch(/group\.svg$/);
   });
 
   it('wraps the illustration in a full-width stage with no subtitle', () => {

@@ -6,26 +6,23 @@ import { ScreenBlock } from './ScreenBlock.tsx';
 describe('ScreenBlock', () => {
   it('renders the ufo visual', () => {
     render(<ScreenBlock />);
-    expect(screen.getByRole('img', { name: 'UFO' })).toHaveAttribute(
-      'src',
-      '/ufo.svg'
-    );
+    expect(
+      screen.getByRole('img', { name: 'UFO' }).getAttribute('src')
+    ).toMatch(/ufo\.svg$/);
   });
 
   it('renders the floating tarsi on top of the ufo', () => {
     render(<ScreenBlock />);
-    expect(screen.getByRole('img', { name: 'Floating Tarsi' })).toHaveAttribute(
-      'src',
-      '/tarsi-float.svg'
-    );
+    expect(
+      screen.getByRole('img', { name: 'Floating Tarsi' }).getAttribute('src')
+    ).toMatch(/tarsi-float\.svg$/);
   });
 
   it('renders the title below the ufo', () => {
     render(<ScreenBlock />);
-    expect(screen.getByRole('img', { name: 'Tarsi Buddies' })).toHaveAttribute(
-      'src',
-      '/title.svg'
-    );
+    expect(
+      screen.getByRole('img', { name: 'Tarsi Buddies' }).getAttribute('src')
+    ).toMatch(/title\.svg$/);
   });
 
   it('renders the desktop-only notice', () => {

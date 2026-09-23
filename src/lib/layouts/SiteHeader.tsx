@@ -1,3 +1,4 @@
+import logo from '../assets/site-header/logo.svg';
 import './SiteHeader.css';
 
 export function SiteHeader() {
@@ -11,7 +12,7 @@ export function SiteHeader() {
         <img
           alt="Tarsi Buddies logo"
           className="site-header__logo"
-          src="/logo.svg"
+          src={logo}
         />
         <span className="site-header__name">Buddies</span>
       </a>

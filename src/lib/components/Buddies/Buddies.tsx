@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import type { ReactNode } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import group from '../../assets/buddies/group.svg';
 import './Buddies.css';
 
 type BuddiesProps = {
@@ -62,7 +63,7 @@ export function Buddies({ children }: BuddiesProps) {
             decoding="async"
             loading="lazy"
             ref={imageRef}
-            src="/group.svg"
+            src={group}
           />
         </div>
         {children}
