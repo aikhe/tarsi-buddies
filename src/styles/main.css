@@ -1,8 +1,5 @@
 @import 'tailwindcss';
-@import './layout/_containers.css';
-@import './base/_colors.css';
-@import './base/_typography.css';
-@import './utilities/_buttons.css';
+@import './tokens.css';
 
 :root {
   color: var(--color-text);
@@ -23,6 +20,12 @@ body {
 :focus-visible {
   outline: 1px solid var(--color-overlay-40);
   outline-offset: 2px;
+}
+
+.section-container {
+  margin-inline: auto;
+  max-width: var(--container-max-width);
+  width: var(--container-width);
 }
 
 /* required lenis smooth-scroll styles. */

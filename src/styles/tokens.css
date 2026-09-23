@@ -6,17 +6,21 @@
   --color-text: #242424;
   --color-text-muted: #737373;
   --color-text-inv: var(--color-white);
-  --color-overlay-02: #f0f0f0;
-  --color-overlay-03: rgb(0 0 0 / 3%);
   --color-overlay-05: rgb(0 0 0 / 5%);
   --color-overlay-10: rgb(0 0 0 / 10%);
-  --color-overlay-15: rgb(0 0 0 / 15%);
-  --color-overlay-20: rgb(0 0 0 / 30%);
   --color-overlay-40: rgb(0 0 0 / 40%);
-  --color-overlay-60: rgb(0 0 0 / 60%);
-  --color-border-solid: #bfbfbf;
-  --color-border-corner: #000;
   --color-success: #178a45;
+  --container-max-width: 1920px;
+  --container-width: 96.4%;
+  --font-rounded:
+    'SF Pro Rounded', ui-rounded, 'SF Pro Text', system-ui, -apple-system,
+    'Segoe UI', roboto, 'Helvetica Neue', arial, sans-serif;
+  --font-sans:
+    geist, system-ui, -apple-system, 'Segoe UI', roboto, 'Helvetica Neue',
+    arial, sans-serif;
+  --font-text:
+    'SF Pro Text', 'SF Pro Display', system-ui, -apple-system, 'Segoe UI',
+    roboto, 'Helvetica Neue', arial, sans-serif;
 }
 
 :root[data-theme='dark'] {
@@ -25,15 +29,8 @@
   --color-text: var(--color-white);
   --color-text-muted: #707070;
   --color-text-inv: var(--color-black);
-  --color-overlay-02: #111;
-  --color-overlay-03: rgb(255 255 255 / 3%);
   --color-overlay-05: rgb(255 255 255 / 5%);
   --color-overlay-10: rgb(255 255 255 / 10%);
-  --color-overlay-15: rgb(255 255 255 / 12%);
-  --color-overlay-20: rgb(255 255 255 / 20%);
   --color-overlay-40: rgb(255 255 255 / 40%);
-  --color-overlay-60: rgb(255 255 255 / 60%);
-  --color-border-solid: #303030;
-  --color-border-corner: #4e4e4e;
   --color-success: #3ddc74;
 }
