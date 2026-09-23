@@ -38,15 +38,8 @@ bun run dev
 │   ├── lib/
 │   │   ├── assets/      # fonts, images, svgs
 │   │   ├── components/  # feature-based components (Home/, ...)
-│   │   ├── data/        # content models
 │   │   ├── layouts/     # page-level layout components
-│   │   ├── state/       # react context state
-│   │   ├── types/       # typescript type definitions
 │   │   └── utils/       # utility functions
-│   └── styles/          # design tokens — base/, layout/, utilities/
-├── .agents/             # agent rules, skills, workflows
-├── .github/workflows/   # ci: check + test + build, commitlint
-└── AGENTS.md            # agent entrypoint
+│   └── styles/          # globals — tokens.css, main.css
+└── .github/workflows/   # ci: check + test + build, commitlint
 ```
-
-See `AGENTS.md` for the agent load order and repo expectations.
