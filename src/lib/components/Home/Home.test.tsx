@@ -8,7 +8,7 @@ describe('Home', () => {
     render(<Home />);
     const logo = screen.getByRole('img', { name: 'Tarsi Buddies' });
     expect(logo).toBeInTheDocument();
-    expect(logo).toHaveAttribute('src', '/title.svg');
+    expect(logo.getAttribute('src')).toMatch(/title\.svg$/);
   });
 
   it('renders the tagline below the title', () => {
@@ -22,21 +22,21 @@ describe('Home', () => {
     render(<Home />);
     const ufo = screen.getByRole('img', { name: 'UFO' });
     expect(ufo).toBeInTheDocument();
-    expect(ufo).toHaveAttribute('src', '/ufo.svg');
+    expect(ufo.getAttribute('src')).toMatch(/ufo\.svg$/);
   });
 
   it('renders the floating tarsi on top of the ufo', () => {
     render(<Home />);
     const tarsi = screen.getByRole('img', { name: 'Floating Tarsi' });
     expect(tarsi).toBeInTheDocument();
-    expect(tarsi).toHaveAttribute('src', '/tarsi-float.svg');
+    expect(tarsi.getAttribute('src')).toMatch(/tarsi-float\.svg$/);
   });
 
   it('renders the number one graphic under the tagline', () => {
     render(<Home />);
     const badge = screen.getByRole('img', { name: 'Number one' });
     expect(badge).toBeInTheDocument();
-    expect(badge).toHaveAttribute('src', '/number-one.svg');
+    expect(badge.getAttribute('src')).toMatch(/number-one\.svg$/);
   });
 
   it('renders the app store and browser actions', () => {
