@@ -1,6 +1,11 @@
-import { ONLY_ALLOW_BEM_SELECTORS } from './stylelint.selectors.js';
-
 /** @type {import('stylelint').Config} */
+
+// enforces BEM naming: block-name__element--modifier
+const ONLY_ALLOW_BEM_SELECTORS = [
+  /^[a-z][a-z0-9]*(-[a-z0-9]+)*(__[a-z0-9]+(-[a-z0-9]+)*)*(--[a-z0-9]+(-[a-z0-9]+)*)?$/,
+  { message: s => `Expected '${s}' to follow BEM (block__element--modifier)` },
+];
+
 export default {
   extends: ['stylelint-config-standard'],
   plugins: ['stylelint-order'],
