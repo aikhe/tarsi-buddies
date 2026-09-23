@@ -14,7 +14,6 @@ import {
 import { PageLayout } from './lib/layouts/PageLayout.tsx';
 import { useLenis } from './lib/utils/use-lenis.ts';
 import { useMediaQuery } from './lib/utils/use-media-query.ts';
-import './App.css';
 
 function App() {
   useLenis();
