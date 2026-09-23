@@ -1,8 +1,6 @@
 node_modules
 dist
-.turbo
 .prettiercache
 .stylelintcache
 build
-package-lock.json
 bun.lock
